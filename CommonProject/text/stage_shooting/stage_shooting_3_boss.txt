@@ -1,0 +1,13 @@
+
+
+HERO		<hero>[1.9,1.5,-24.4]
+MAP			<stage3>
+
+STATE	<score_state>[result](gameover)
+
+RANGE		<text/range_3_boss.txt>
+MOVE		<text/move_3_boss.txt>
+
+DIRECTION (0,0,-1)
+
+FOG	[0,100]

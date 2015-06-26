@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{ffe21099-ce8d-4d38-a2db-dd954d47979a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Multi">
+      <UniqueIdentifier>{7440513f-d925-4825-af31-b76da23ad4bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXProject">
+      <UniqueIdentifier>{96badac7-b9ca-4721-a720-516c5b135264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Text">
+      <UniqueIdentifier>{b8d36e97-00e4-48d9-aa54-f7f8a27160c8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="small.ico">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="hlsl.fx" />
+    <None Include="text\タスク構造.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\データ構造.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\更新.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\charactor.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\ReadMe.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\resource.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\アイデア.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\text.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\range.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\stage_shooting.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\stage_text.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\stage.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\stage_title.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\move.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="text\score.txt">
+      <Filter>Text</Filter>
+    </None>
+    <None Include="CommonProject.ico">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CommonProject.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\TKYHLSL.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TKYLIBRARY.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TKYPRIMITIVE.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TKYVECTOR.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TKYXFILE.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TKYXSHADOW.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Anime.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\directx.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TKY2DTEXTURE.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TKY3D.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TKYBASEHEADER.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TKYDIRECTINPUT.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TKYFONT.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TkyThread.h">
+      <Filter>Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TkyWindowsApplication.h">
+      <Filter>Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TkyWorld.h">
+      <Filter>Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TkyBaseCollision.h">
+      <Filter>Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TkyCollision.h">
+      <Filter>Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TkyEvent.h">
+      <Filter>Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TkyLogicView.h">
+      <Filter>Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TkyPhysics.h">
+      <Filter>Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TkyPositionTask.h">
+      <Filter>Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TKYTASK.h">
+      <Filter>Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CommonProject.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\targetver.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataStructure.h">
+      <Filter>DirectXProject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FPSGameViews.h">
+      <Filter>DirectXProject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FPSGameProject.h">
+      <Filter>DirectXProject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TkyDirectXApplicationLayer.h">
+      <Filter>Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ResourceManage.h">
+      <Filter>DirectXProject</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\TKYPRIMITIVE.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TKYVECTOR.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TKYXFILE.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TKYXSHADOW.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3dskine.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\directx.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TKY2DTEXTURE.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TKY3D.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TKYBASEHEADER.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TKYDIRECTINPUT.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TKYFONT.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TKYHLSL.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TkyThread.cpp">
+      <Filter>Multi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TkyEvent.cpp">
+      <Filter>Multi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TkyPhysics.cpp">
+      <Filter>Multi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TkyPositionTask.cpp">
+      <Filter>Multi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TKYTASK.cpp">
+      <Filter>Multi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CommonProject.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TkyWindowsApplication.cpp">
+      <Filter>Multi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TkyWorld.cpp">
+      <Filter>Multi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataStructure.cpp">
+      <Filter>DirectXProject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FPSGameViews.cpp">
+      <Filter>DirectXProject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FPSGameProject.cpp">
+      <Filter>DirectXProject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TkyDirectXApplicationLayer.cpp">
+      <Filter>Multi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResourceManage.cpp">
+      <Filter>DirectXProject</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F75842C2-773F-4FB8-AAFB-C91896AE0A0C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CommonProject</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\Program Files\Microsoft DirectX SDK %28February 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Program Files\Microsoft DirectX SDK %28February 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>E:\Program Files\Microsoft DirectX SDK %28February 2010%29\Include;$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <LibraryPath>E:\Program Files\Microsoft DirectX SDK %28February 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dinput8.lib;dxguid.lib;dxerr.lib;dxguid.lib;d3dx9d.lib;d3d9.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>dinput8.lib;dxguid.lib;dxerr.lib;dxguid.lib;d3dx9d.lib;d3d9.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="CommonProject.ico" />
+    <None Include="hlsl.fx" />
+    <None Include="small.ico">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="text\charactor.txt" />
+    <None Include="text\move.txt" />
+    <None Include="text\range.txt" />
+    <None Include="text\ReadMe.txt" />
+    <None Include="text\resource.txt" />
+    <None Include="text\score.txt" />
+    <None Include="text\stage.txt" />
+    <None Include="text\stage_shooting.txt" />
+    <None Include="text\stage_text.txt" />
+    <None Include="text\stage_title.txt" />
+    <None Include="text\text.txt" />
+    <None Include="text\アイデア.txt" />
+    <None Include="text\タスク構造.txt" />
+    <None Include="text\データ構造.txt" />
+    <None Include="text\更新.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CommonProject.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\Anime.h" />
+    <ClInclude Include="src\CommonProject.h" />
+    <ClInclude Include="src\DataStructure.h" />
+    <ClInclude Include="src\directx.h" />
+    <ClInclude Include="src\FPSGameProject.h" />
+    <ClInclude Include="src\FPSGameViews.h" />
+    <ClInclude Include="src\resource.h" />
+    <ClInclude Include="src\ResourceManage.h" />
+    <ClInclude Include="src\stdafx.h" />
+    <ClInclude Include="src\targetver.h" />
+    <ClInclude Include="src\TKY2DTEXTURE.h" />
+    <ClInclude Include="src\TKY3D.h" />
+    <ClInclude Include="src\TkyBaseCollision.h" />
+    <ClInclude Include="src\TKYBASEHEADER.h" />
+    <ClInclude Include="src\TkyCollision.h" />
+    <ClInclude Include="src\TKYDIRECTINPUT.h" />
+    <ClInclude Include="src\TkyDirectXApplicationLayer.h" />
+    <ClInclude Include="src\TkyEvent.h" />
+    <ClInclude Include="src\TKYFONT.h" />
+    <ClInclude Include="src\TKYHLSL.h" />
+    <ClInclude Include="src\TKYLIBRARY.h" />
+    <ClInclude Include="src\TkyLogicView.h" />
+    <ClInclude Include="src\TkyPhysics.h" />
+    <ClInclude Include="src\TkyPositionTask.h" />
+    <ClInclude Include="src\TKYPRIMITIVE.h" />
+    <ClInclude Include="src\TKYTASK.h" />
+    <ClInclude Include="src\TkyThread.h" />
+    <ClInclude Include="src\TKYVECTOR.h" />
+    <ClInclude Include="src\TkyWindowsApplication.h" />
+    <ClInclude Include="src\TkyWorld.h" />
+    <ClInclude Include="src\TKYXFILE.h" />
+    <ClInclude Include="src\TKYXSHADOW.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\3dskine.cpp" />
+    <ClCompile Include="src\CommonProject.cpp" />
+    <ClCompile Include="src\DataStructure.cpp" />
+    <ClCompile Include="src\directx.cpp" />
+    <ClCompile Include="src\FPSGameProject.cpp" />
+    <ClCompile Include="src\FPSGameViews.cpp" />
+    <ClCompile Include="src\ResourceManage.cpp" />
+    <ClCompile Include="src\stdafx.cpp" />
+    <ClCompile Include="src\TKY2DTEXTURE.cpp" />
+    <ClCompile Include="src\TKY3D.cpp" />
+    <ClCompile Include="src\TKYBASEHEADER.cpp" />
+    <ClCompile Include="src\TKYDIRECTINPUT.cpp" />
+    <ClCompile Include="src\TkyDirectXApplicationLayer.cpp" />
+    <ClCompile Include="src\TkyEvent.cpp" />
+    <ClCompile Include="src\TKYFONT.cpp" />
+    <ClCompile Include="src\TKYHLSL.cpp" />
+    <ClCompile Include="src\TkyPhysics.cpp" />
+    <ClCompile Include="src\TkyPositionTask.cpp" />
+    <ClCompile Include="src\TKYPRIMITIVE.cpp" />
+    <ClCompile Include="src\TKYTASK.cpp" />
+    <ClCompile Include="src\TkyThread.cpp" />
+    <ClCompile Include="src\TKYVECTOR.cpp" />
+    <ClCompile Include="src\TkyWindowsApplication.cpp" />
+    <ClCompile Include="src\TkyWorld.cpp" />
+    <ClCompile Include="src\TKYXFILE.cpp" />
+    <ClCompile Include="src\TKYXSHADOW.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

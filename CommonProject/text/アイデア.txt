@@ -1,0 +1,97 @@
+
+必要な関数またはクラス、データ構造を記録しとく
+
+/////////データ全部管理型/////////
+
+static vector<T> m_vIndex;		//取得したデータの取得
+
+コンストラクタ、デストラクタのprivate化
+
+static T* CreateClass();		//要素取得
+static VOID Destroy();		//要素破棄
+
+利点は自動で全部破棄してくれるので自分で消す必要がない
+デメリットは、vector<>には限界があるので、静的な容量実装する必要があるかもしれないこと
+
+///////////  DLLによる編集のオブジェクト化  /////////
+
+BOOL DLL_Create(HWND);		//DLLを読み込んだときに実行される、ウィンドウの定義などをする
+BOOL DLL_Start(ALLDATA);		//DLLで指定されたものが表示される,システムデータのポインタが渡される
+BOOL DLL_Updata();				//スタート後に常に通る
+BOOL DLL_Destroy();				//領域を破棄する際にとおる
+
+DLLを呼び出す感じでエディターが利用できる
+
+//==================================================
+//ゲーム作成における便利なライブラリ
+//==================================================
+
+//数字と画像を登録しておいて数字を指定することによりその画像が表示されるシステム
+Number Insert( pGraph );		//画像とそれに対応する番号の追加
+pGraph  At( Number );			//画像の取得
+Number At( pGraph );			//↑の反対
+NULL		Delete( Number );	//消去
+	
+
+//スレッド数などを取得らしい
+/*	//終わるまで待つ
+	WHILE( 1 )
+	{
+		IF(g_ObjectThread->GetParam() == TKYTHREAD_NONE_LOOP)break;
+	}
+*/
+/*
+	  DWORD dwPID = GetCurrentProcessId();
+	  HANDLE hSnapshot;
+	  INT nModule   = 0;
+	  INT nThread   = 0;
+	  INT nProccess = 0;
+  
+	  if ( (hSnapshot = CreateToolhelp32Snapshot(TH32CS_SNAPALL,dwPID)) != INVALID_HANDLE_VALUE ){
+		MODULEENTRY32  me32 = { sizeof(MODULEENTRY32) };
+		THREADENTRY32  te32 = { sizeof(THREADENTRY32) };
+		PROCESSENTRY32 pe32 = { sizeof(PROCESSENTRY32) };
+    
+		// モジュール数
+		if ( Module32First(hSnapshot,&me32) ){
+		  do {
+			nModule++;
+		  } while ( Module32Next(hSnapshot,&me32) );
+		}
+		// スレッド数
+		if ( Thread32First(hSnapshot,&te32) ){
+		  do {
+			nThread++;
+		  } while ( Thread32Next(hSnapshot,&te32) );
+		}
+		// プロセス数
+		if ( Process32First(hSnapshot,&pe32) ){
+		  do {
+			nProccess++;
+		  } while ( Process32Next(hSnapshot,&pe32) );
+		}
+		CloseHandle( hSnapshot );
+	  }
+*/
+
+
+//マップで構造体にアクセスする場合
+	//マップ要素
+	CharaMap m_Charactor;
+	//構造体
+	chara chara1 = { 1,1,1,1,};
+	chara chara2 = { 2,2,2,2,};
+	chara chara3 = { 3,3,3,3,};
+	chara chara4 = { 4,4,4,4,};
+
+	m_Charactor.insert( CharaMap::value_type( 1 , chara1 ) );
+	m_Charactor.insert( CharaMap::value_type( 2 , chara2 ) );
+	m_Charactor.insert( CharaMap::value_type( 3 , chara3 ) );
+	m_Charactor.insert( CharaMap::value_type( 4 , chara4 ) );
+
+	cout << "chara1 " << m_Charactor[1].Attack << m_Charactor[1].pos << m_Charactor[1].fchara << m_Charactor[1].over << endl;
+	cout << "chara2 " << m_Charactor[2].Attack << m_Charactor[2].pos << m_Charactor[2].fchara << m_Charactor[2].over << endl;
+	cout << "chara3 " << m_Charactor[3].Attack << m_Charactor[3].pos << m_Charactor[3].fchara << m_Charactor[3].over << endl;
+	cout << "chara4 " << m_Charactor[4].Attack << m_Charactor[4].pos << m_Charactor[4].fchara << m_Charactor[4].over << endl;
+
+	のようにアクセスできる

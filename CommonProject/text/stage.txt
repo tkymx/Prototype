@@ -1,0 +1,42 @@
+
+
+
+
+//ÉQÅ[ÉÄÇÃó¨ÇÍ
+
+
+GAMEFLOW [TITLE]<text/stage_title.txt>
+
+GAMEFLOW [TEXT]<text/stage_text/stage_text_prologue.txt>
+
+
+GAMEFLOW [SHOOTING]<text/stage_shooting/stage_shooting_1.txt>
+
+GAMEFLOW [TEXT]<text/stage_text/stage_text_before_boss1.txt>
+
+GAMEFLOW [SHOOTING]<text/stage_shooting/stage_shooting_1_boss.txt>
+
+GAMEFLOW [TEXT]<text/stage_text/stage_text_after_boss1.txt>
+
+
+
+GAMEFLOW [SHOOTING]<text/stage_shooting/stage_shooting_2.txt>
+
+
+GAMEFLOW [TEXT]<text/stage_text/stage_text_before_boss2.txt>
+
+GAMEFLOW [SHOOTING]<text/stage_shooting/stage_shooting_2_boss.txt>
+
+GAMEFLOW [TEXT]<text/stage_text/stage_text_after_boss2.txt>
+
+
+GAMEFLOW [SHOOTING]<text/stage_shooting/stage_shooting_3.txt>
+
+GAMEFLOW [TEXT]<text/stage_text/stage_text_before_boss3.txt>
+
+GAMEFLOW [SHOOTING]<text/stage_shooting/stage_shooting_3_boss.txt>
+
+GAMEFLOW [TEXT]<text/stage_text/stage_text_after_boss3.txt>
+
+GAMEFLOW [TEXT]<text/stage_text/stage_text_staff.txt>
+

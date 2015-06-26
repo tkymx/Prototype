@@ -1,0 +1,10 @@
+
+
+
+TITLE 
+{MENU_START}[title_start]
+{MENU_SCORE}[title_score]
+{MENU_BACK}[title_back]
+{MENU_LOGO}[title_logo]
+{MENU_RANKING}[title_ranking]
+{END}

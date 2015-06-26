@@ -1,0 +1,101 @@
+
+
+//マップ情報
+XFILE [stage1]<mesh/stage1.x>(1)
+XFILE [stage2]<mesh/stage2.x>(1)
+XFILE [stage3]<mesh/stage3.x>(1)
+
+//雑魚キャラ情報
+XFILE [chara_stand]	<mesh/throw.x>(1)
+
+XFILE [chara_walk]	<mesh/enemy_normal_walk.x>(1)
+XFILE [chara_hit]	<mesh/enemy_normal_hit.x>(1)
+XFILE [chara_dead]	<mesh/enemy_normal_dead.x>(1)
+XFILE [chara_attack]	<mesh/enemy_normal_attack.x>(1)
+
+
+//ボス1キャラ情報
+XFILE [boss_stand]	<mesh/throw.x>(1)
+
+XFILE [boss_walk]	<mesh/boss1_walk.x>(1)
+XFILE [boss_walk_rotate]<mesh/boss1_walk2.x>(1)
+XFILE [boss_hit]	<mesh/boss1_hit.x>(1)
+XFILE [boss_dead]	<mesh/boss1_dead.x>(1)
+XFILE [boss_attack]	<mesh/boss1_attack.x>(1)
+XFILE [boss_attack_rotate]<mesh/boss1_attack2.x>(1)
+
+//ボス2キャラ情報
+XFILE [boss_2_stand]		<mesh/throw.x>(1)
+
+XFILE [boss_2_walk]		<mesh/boss2_walk.x>(1)
+XFILE [boss_2_hit]		<mesh/boss2_hit.x>(1)
+XFILE [boss_2_dead]		<mesh/boss2_dead.x>(1)
+XFILE [boss_2_attack]		<mesh/boss2_attack1.x>(1)
+XFILE [boss_2_attack_throw]	<mesh/boss2_attack2.x>(1)
+
+
+//ボス3キャラ情報
+XFILE [boss_3_stand]		<mesh/throw.x>(1)
+
+XFILE [boss_3_walk]		<mesh/boss3_walk.x>(1)
+XFILE [boss_3_walk_rotate]	<mesh/boss3_walk2.x>(1)
+XFILE [boss_3_walk_throw]	<mesh/boss3_walk3.x>(1)
+XFILE [boss_3_hit]		<mesh/boss3_hit.x>(1)
+XFILE [boss_3_dead]		<mesh/boss3_dead.x>(1)
+XFILE [boss_3_attack]		<mesh/boss3_attack.x>(1)
+XFILE [boss_3_attack_rotate]	<mesh/boss3_attack2.x>(1)
+XFILE [boss_3_attack_throw]	<mesh/boss3_attack3.x>(1)
+
+
+//テキストウィンドウ
+TEXTURE [window]<texture/window.png,1,1,1,800,200,0>
+
+//アタックエフェクト
+TEXTURE [effect]<texture/effect.png,4,4,1,100,100,1>
+TEXTURE [flash]<texture/flash.png,2,1,2,800,600,1>
+TEXTURE [damage]<texture/damage.png,5,1,5,800,600,0.5>
+
+//スコア
+TEXTURE [score_state]<texture/score.png,1,1,1,800,600,1>
+TEXTURE [result]<texture/result.png,1,1,1,800,600,1>
+TEXTURE [gameover]<texture/gameover.png,1,1,1,800,600,1>
+
+//タイトル
+TEXTURE [title_start]<texture/title_start.png,2,1,2,400,100,0>
+TEXTURE [title_score]<texture/title_score.png,2,1,2,400,100,0>
+TEXTURE [title_back]<texture/title_back.png,1,1,1,800,600,1>
+TEXTURE [title_logo]<texture/title_logo.png,1,1,1,800,600,1>
+TEXTURE [title_ranking]<texture/title_ranking.png,1,1,1,800,600,1>
+
+
+//テキストゾーン
+TEXTURE [back1]<texture/back1.png,1,1,1,800,600,1>
+TEXTURE [back2]<texture/back2.png,1,1,1,800,600,1>
+TEXTURE [back3]<texture/back3.png,1,1,1,800,600,1>
+
+TEXTURE [Whayato]<texture/Whayato.png,1,1,1,800,300,1>
+TEXTURE [Wtakada]<texture/Wtakada.png,1,1,1,800,300,1>
+TEXTURE [Wyuuki]<texture/Wyuuki.png,1,1,1,800,300,1>
+TEXTURE [Wmatsuda]<texture/Wmatsuda.png,1,1,1,800,300,1>
+TEXTURE [Wtsubame]<texture/Wtsubame.png,1,1,1,800,300,1>
+
+TEXTURE [hayato1]<texture/hayato1.png,1,1,1,400,800,1>
+TEXTURE [hayato2]<texture/hayato2.png,1,1,1,400,800,1>
+
+TEXTURE [takada1]<texture/takada1.png,1,1,1,400,800,1>
+TEXTURE [takada2]<texture/takada2.png,1,1,1,400,800,1>
+
+TEXTURE [yuuki1]<texture/yuuki1.png,1,1,1,400,800,1>
+TEXTURE [yuuki2]<texture/yuuki2.png,1,1,1,400,800,1>
+
+TEXTURE [tsubame1]<texture/tsubame1.png,1,1,1,400,800,1>
+TEXTURE [tsubame2]<texture/tsubame2.png,1,1,1,400,800,1>
+TEXTURE [tsubame3]<texture/tsubame3.png,1,1,1,400,800,1>
+
+TEXTURE [matsuda]<texture/matsuda.png,1,1,1,400,800,1>
+
+TEXTURE [ill1]<texture/ill1.png,1,1,1,800,600,1>
+TEXTURE [ill2]<texture/ill2.png,1,1,1,800,600,1>
+TEXTURE [ill3]<texture/ill3.png,1,1,1,800,600,1>
+TEXTURE [ill4]<texture/ill4.png,1,1,1,800,600,1>
+TEXTURE [ill5]<texture/ill5.png,1,1,1,800,600,1>

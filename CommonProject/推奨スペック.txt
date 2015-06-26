@@ -1,0 +1,9 @@
+推奨スペック
+　CPU　　	：Pentium4 2.6GHz以上
+　メモリ 	：512MB以上
+  ビデオカード	：DirectX 9.0c対応
+　サウンドカード：音はありません
+　対応OS	：Windows xp/vista/7
+　
+　
+　
